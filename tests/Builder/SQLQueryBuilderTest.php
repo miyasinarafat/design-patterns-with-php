@@ -17,7 +17,7 @@ final class SQLQueryBuilderTest extends TestCase
     {
         $query = $this->buildQuery(new MysqlQueryBuilder())->getSQL();
 
-        $this->assertTrue(str_contains($query, 'SELECT'));
+        $this->assertStringContainsString($query, 'SELECT');
     }
 
     /** @test */
@@ -25,7 +25,7 @@ final class SQLQueryBuilderTest extends TestCase
     {
         $query = $this->buildQuery(new PostgresQueryBuilder())->getSQL();
 
-        $this->assertTrue(str_contains($query, 'OFFSET'));
+        $this->assertStringContainsString($query, 'OFFSET');
     }
 
     /**
