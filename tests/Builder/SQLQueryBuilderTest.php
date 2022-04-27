@@ -1,6 +1,6 @@
 <?php
 
-namespace miyasinarafat\DesignPatterns\Tests;
+namespace miyasinarafat\DesignPatterns\Tests\Builder;
 
 use miyasinarafat\DesignPatterns\Builder\MysqlQueryBuilder;
 use miyasinarafat\DesignPatterns\Builder\PostgresQueryBuilder;
@@ -10,7 +10,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * @group builder
  */
-class SQLQueryBuilderTest extends TestCase
+final class SQLQueryBuilderTest extends TestCase
 {
     /** @test */
     public function mysqlQueryBuilder(): void
