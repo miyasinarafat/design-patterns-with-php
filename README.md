@@ -4,6 +4,15 @@
 
 ```bash
 composer test
+
+# Run for Builder pattern
+./vendor/bin/phpunit --group builder
+
+# Run for Adapter pattern
+./vendor/bin/phpunit --group adapter
+
+# Run for Observer pattern
+./vendor/bin/phpunit --group observer
 ```
 
 ## Contributing
